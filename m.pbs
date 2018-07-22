@@ -1,0 +1,15 @@
+#PBS -l walltime=00:30:00,nodes=1:ppn=1
+#PBS -N meta_job
+#PBS -q @master
+#!/bin/bash
+
+
+cd /home/sbabichev/DSM02
+#for i in `cat $PBS_NODEFILE`
+#do
+#    echo $PBS_NODEFILE
+#    (ssh -n $i /home/sbabichev/DSM02/meta 192.168.222.156) &
+#done
+
+./meta 192.168.222.156
+
