@@ -816,7 +816,7 @@ public:
 					reachedMin = zoneMinValue;
 				}
 			}
-            printf("iter=%d reached min now=%g\n", iterationsCount, reachedMin);
+            printf("iter=%d of %d reached min now=%g\n", iteration, iterationsCount, reachedMin);
 			if (do_print & PRINT_DEBUG_ZONES) {
 				if (zones[zoneContainedMin].size() > 1) {
 					printf("Zone %d contains %lu points and global minimum %g\n", zoneContainedMin, zones[zoneContainedMin].size(), reachedMin);
@@ -1054,7 +1054,7 @@ main(int argc, char **argv)
 //		start.v[8] = 0; end.v[8] = 3;
 //		start.v[9] = 0; end.v[9] = 1;
 //		start.v[10] = 0; end.v[10] = 2;
-		meta_main(8, dsm, tf, start, end, 256, diam);
+		meta_main(8, dsm, tf, start, end, 32, diam);
 #endif
 		cout << "Program ended" << endl;
 		return 0;

@@ -331,7 +331,7 @@ int
 main(int argc, char **argv)
 {
 	MetaClient   grid;
-	::signal(SIGINT, sigfunc);
+	//::signal(SIGINT, sigfunc);
     srand(time(NULL));
 	string ip = "188.165.223.171";
 	if (argc > 1)
