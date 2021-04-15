@@ -1,7 +1,7 @@
 all: metaserv meta rosenbroke
 
 clear:
-	-rm -f metaserv meta
+	-rm -f metaserv meta rosenbroke
 	-rm $(SERVEROBJS)
 	-rm $(CLIENTOBJS)
 	-rm -f metaserv meta
@@ -37,7 +37,7 @@ CLIENTOBJS = AdsorbClient/MetaClient.o \
 #i#MetaControlServer.o: MetaControlServer.cpp
 #	c++ -I ../DSLib MetaCon
 
-CPPFLAGS = -I DSLib -I MetaControlServer -I MetaClient
+CPPFLAGS = -I DSLib -I MetaControlServer -I MetaClient -O
 
 rosenbroke:
 	cd RosenbrokeDir; make && cp rosenbroke ..

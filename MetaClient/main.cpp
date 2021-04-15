@@ -332,8 +332,8 @@ main(int argc, char **argv)
 {
 	MetaClient   grid;
 	::signal(SIGINT, sigfunc);
-        srand(time(NULL));
-	string ip = "192.168.1.202";
+    srand(time(NULL));
+	string ip = "188.165.223.171";
 	if (argc > 1)
 	{
 		ip = argv[1];
