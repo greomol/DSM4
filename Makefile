@@ -37,6 +37,9 @@ CLIENTOBJS = AdsorbClient/MetaClient.o \
 #i#MetaControlServer.o: MetaControlServer.cpp
 #	c++ -I ../DSLib MetaCon
 
+clean:
+	rm $(SERVEROBJS) $(CLIENTOBJS) rosenbroke metaserv meta
+
 CPPFLAGS = -I DSLib -I MetaControlServer -I MetaClient -O
 
 rosenbroke:
